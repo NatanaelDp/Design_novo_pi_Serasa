@@ -34,10 +34,10 @@
             this.labelCima = new System.Windows.Forms.Label();
             this.panelEsquerdo = new System.Windows.Forms.Panel();
             this.Consulta = new System.Windows.Forms.Button();
-            this.Vacinacao = new System.Windows.Forms.Button();
+            this.BtnVacinacao = new System.Windows.Forms.Button();
             this.Coletaexame = new System.Windows.Forms.Button();
             this.Doarsangue = new System.Windows.Forms.Button();
-            this.painelMeio = new System.Windows.Forms.Panel();
+            this.panelFundo = new System.Windows.Forms.Panel();
             this.panelCima.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelEsquerdo.SuspendLayout();
@@ -79,7 +79,7 @@
             // 
             this.panelEsquerdo.BackColor = System.Drawing.Color.Navy;
             this.panelEsquerdo.Controls.Add(this.Consulta);
-            this.panelEsquerdo.Controls.Add(this.Vacinacao);
+            this.panelEsquerdo.Controls.Add(this.BtnVacinacao);
             this.panelEsquerdo.Controls.Add(this.Coletaexame);
             this.panelEsquerdo.Controls.Add(this.Doarsangue);
             this.panelEsquerdo.Location = new System.Drawing.Point(1, 108);
@@ -98,16 +98,17 @@
             this.Consulta.Text = "Consulta";
             this.Consulta.UseVisualStyleBackColor = false;
             // 
-            // Vacinacao
+            // BtnVacinacao
             // 
-            this.Vacinacao.BackColor = System.Drawing.Color.SteelBlue;
-            this.Vacinacao.ForeColor = System.Drawing.Color.White;
-            this.Vacinacao.Location = new System.Drawing.Point(41, 205);
-            this.Vacinacao.Name = "Vacinacao";
-            this.Vacinacao.Size = new System.Drawing.Size(93, 43);
-            this.Vacinacao.TabIndex = 0;
-            this.Vacinacao.Text = "Vacinação";
-            this.Vacinacao.UseVisualStyleBackColor = false;
+            this.BtnVacinacao.BackColor = System.Drawing.Color.SteelBlue;
+            this.BtnVacinacao.ForeColor = System.Drawing.Color.White;
+            this.BtnVacinacao.Location = new System.Drawing.Point(41, 205);
+            this.BtnVacinacao.Name = "BtnVacinacao";
+            this.BtnVacinacao.Size = new System.Drawing.Size(93, 43);
+            this.BtnVacinacao.TabIndex = 0;
+            this.BtnVacinacao.Text = "Vacinação";
+            this.BtnVacinacao.UseVisualStyleBackColor = false;
+            this.BtnVacinacao.Click += new System.EventHandler(this.BtnVacinacao_Click);
             // 
             // Coletaexame
             // 
@@ -132,13 +133,13 @@
             this.Doarsangue.UseVisualStyleBackColor = false;
             this.Doarsangue.Click += new System.EventHandler(this.Doarsangue_Click);
             // 
-            // painelMeio
+            // panelFundo
             // 
-            this.painelMeio.BackColor = System.Drawing.Color.White;
-            this.painelMeio.Location = new System.Drawing.Point(242, 118);
-            this.painelMeio.Name = "painelMeio";
-            this.painelMeio.Size = new System.Drawing.Size(800, 500);
-            this.painelMeio.TabIndex = 2;
+            this.panelFundo.BackColor = System.Drawing.Color.LightGray;
+            this.panelFundo.Location = new System.Drawing.Point(243, 118);
+            this.panelFundo.Name = "panelFundo";
+            this.panelFundo.Size = new System.Drawing.Size(968, 634);
+            this.panelFundo.TabIndex = 3;
             // 
             // Form1
             // 
@@ -146,7 +147,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(155)))), ((int)(((byte)(245)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.painelMeio);
+            this.Controls.Add(this.panelFundo);
             this.Controls.Add(this.panelEsquerdo);
             this.Controls.Add(this.panelCima);
             this.Name = "Form1";
@@ -165,11 +166,11 @@
         private Panel panelCima;
         private Panel panelEsquerdo;
         private Label labelCima;
-        public  Panel painelMeio;
         private Button Consulta;
-        private Button Vacinacao;
+        private Button BtnVacinacao;
         private Button Coletaexame;
         private Button Doarsangue;
         private PictureBox pictureBox1;
+        private Panel panelFundo;
     }
 }

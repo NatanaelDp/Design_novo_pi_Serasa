@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Design_novo_pi_Serasa
 {
-    public partial class Sangue : Form
+    public partial class Vacinação : Form
     {
-        public Sangue()
+        public Vacinação()
         {
             InitializeComponent();
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
